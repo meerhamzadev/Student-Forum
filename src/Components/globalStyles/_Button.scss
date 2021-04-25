@@ -1,0 +1,13 @@
+%buttonStyle {
+    padding       : .3rem .5rem;
+    font-size     : .9rem;
+    border        : none;
+    outline       : none;
+    border-radius : .4rem;
+    text-transform: uppercase;
+    letter-spacing: .02rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

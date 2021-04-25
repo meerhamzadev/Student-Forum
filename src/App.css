@@ -1,3 +1,17 @@
+.navbar .navbar__buttons__loginButton, .WelcomePage__Body__Description__Button {
+  padding: .3rem .5rem;
+  font-size: .9rem;
+  border: none;
+  outline: none;
+  border-radius: .4rem;
+  text-transform: uppercase;
+  letter-spacing: .02rem;
+}
+
+.navbar .navbar__buttons__loginButton:hover, .WelcomePage__Body__Description__Button:hover {
+  cursor: pointer;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,6 +25,7 @@
   padding-left: 80px;
   padding-right: 40px;
   background-color: transparent;
+  font-size: 10px;
 }
 
 .navbar__logo {
@@ -29,6 +44,16 @@
 .navbar .navbar__buttons__account {
   font-size: 3rem;
   color: #0b9b9b;
+}
+
+.navbar .navbar__buttons__loginButton {
+  background-color: #283e71;
+  color: white;
+  width: 6rem;
+}
+
+.navbar .navbar__buttons__loginButton:hover {
+  background-color: #001e63;
 }
 
 .home {
@@ -122,6 +147,107 @@
 .recents .recents__items .recents__items__item:hover {
   background-color: #0b9b9b;
   color: #f3feff;
+}
+
+.navbar .navbar__buttons__loginButton, .WelcomePage__Body__Description__Button {
+  padding: .3rem .5rem;
+  font-size: .9rem;
+  border: none;
+  outline: none;
+  border-radius: .4rem;
+  text-transform: uppercase;
+  letter-spacing: .02rem;
+}
+
+.navbar .navbar__buttons__loginButton:hover, .WelcomePage__Body__Description__Button:hover {
+  cursor: pointer;
+}
+
+.WelcomePage {
+  background-image: url("./Components/Assets/welcomeBackground.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  font-size: 10px;
+}
+
+.WelcomePage__Body {
+  margin-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 9em;
+  max-width: 25%;
+}
+
+.WelcomePage__Body__Title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #283e71;
+}
+
+.WelcomePage__Body__Title span {
+  font-weight: lighter;
+  font-size: 2.5em;
+  letter-spacing: .05em;
+}
+
+.WelcomePage__Body__Description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 6em;
+}
+
+.WelcomePage__Body__Description__Text {
+  padding: 1em 0em;
+  font-size: 1.6em;
+  color: #1f7583;
+}
+
+.WelcomePage__Body__Description__Button {
+  background-color: #1f7583;
+  color: white;
+  width: 9em;
+  padding-top: .7em;
+  padding-bottom: .7em;
+}
+
+.WelcomePage__Body__Description__Button:hover {
+  background-color: #4f8d96;
+}
+
+.SocialMedia {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #283e71;
+}
+
+.SocialMedia svg path:hover {
+  color: #4870cc;
+  cursor: pointer;
 }
 
 * {
