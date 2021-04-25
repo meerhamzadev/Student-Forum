@@ -1,0 +1,30 @@
+.recents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    &__heading {
+        color: #0b9b9b;
+        margin-bottom: 1.4rem;
+    }
+    
+    .recents__items {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1.4rem;
+        
+        .recents__items__item {
+            padding: 1.4rem;
+            width: 12rem;
+            background-color: #aff5fd;
+            color: #078585;
+            font-weight: bold;
+            
+            &:hover {
+                background-color: #0b9b9b;
+                color: #f3feff;
+            }
+        }
+    }
+}
