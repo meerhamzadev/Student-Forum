@@ -1,0 +1,31 @@
+.dashboard {
+    display              : grid;
+    grid-template-columns: auto auto;
+    margin-top           : 4rem;
+    margin-left          : 6rem;
+
+    &__welcome {
+        font-size: 2rem;
+        color    : #0b9b9b;
+    }
+
+    &__shortcuts {
+        margin-left          : 12rem;
+        display              : grid;
+        gap                  : 2rem;
+        grid-template-columns: auto auto;
+
+        .dashboard__shortcuts__button {
+            max-height      : 34px;
+            width           : 12rem;
+            border-radius   : 0.5rem;
+            color           : #f3feff;
+            background-color: #0b9b9b;
+
+            &:hover {
+                background-color: #aff5fd;
+                color           : #078585;
+            }
+        }
+    }
+}

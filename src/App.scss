@@ -1,8 +1,7 @@
-@import './Styles/General/Navbar';
-@import './Styles//Home/HomePage';
-@import './Styles/Home/Recents';
-@import './Styles/Home/Dashboard';
+@import './Components/NavBar/Navbar';
+@import './Components/HomePage/HomePage';
 
 * {
-    margin: 0;
+    margin : 0;
+    padding: 0;
 }

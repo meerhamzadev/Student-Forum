@@ -10,6 +10,7 @@
           align-items: center;
   padding-left: 80px;
   padding-right: 40px;
+  background-color: transparent;
 }
 
 .navbar__logo {
@@ -31,8 +32,9 @@
 }
 
 .home {
-  background-image: url("./JS/Home/Assets/Background-01.png");
+  background-image: url("./Components/Assets/mainBackground.png");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
 }
@@ -42,6 +44,42 @@
   display: -ms-flexbox;
   display: flex;
   padding-left: 1.6rem;
+}
+
+.dashboard {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  margin-top: 4rem;
+  margin-left: 6rem;
+}
+
+.dashboard__welcome {
+  font-size: 2rem;
+  color: #0b9b9b;
+}
+
+.dashboard__shortcuts {
+  margin-left: 12rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.dashboard__shortcuts .dashboard__shortcuts__button {
+  max-height: 34px;
+  width: 12rem;
+  border-radius: 0.5rem;
+  color: #f3feff;
+  background-color: #0b9b9b;
+}
+
+.dashboard__shortcuts .dashboard__shortcuts__button:hover {
+  background-color: #aff5fd;
+  color: #078585;
 }
 
 .recents {
@@ -86,43 +124,8 @@
   color: #f3feff;
 }
 
-.dashboard {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  margin-top: 4rem;
-  margin-left: 6rem;
-}
-
-.dashboard__welcome {
-  font-size: 2rem;
-  color: #0b9b9b;
-}
-
-.dashboard__shortcuts {
-  margin-left: 12rem;
-  display: -ms-grid;
-  display: grid;
-  gap: 2rem;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-}
-
-.dashboard__shortcuts .dashboard__shortcuts__button {
-  max-height: 34px;
-  width: 12rem;
-  border-radius: 0.5rem;
-  color: #f3feff;
-  background-color: #0b9b9b;
-}
-
-.dashboard__shortcuts .dashboard__shortcuts__button:hover {
-  background-color: #aff5fd;
-  color: #078585;
-}
-
 * {
   margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=App.css.map */

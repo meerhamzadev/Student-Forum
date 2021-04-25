@@ -1,27 +1,28 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 80px;
-    padding-right: 40px;
-    
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    padding-left    : 80px;
+    padding-right   : 40px;
+    background-color: transparent;
+
     &__logo {
         color: #0b9b9b;
     }
-    
+
     .navbar__buttons {
         &__button {
             color: #0b9b9b;
         }
-        
+
         &__menu {
             font-size: 2rem;
-            color: #0b9b9b;
+            color    : #0b9b9b;
         }
-        
+
         &__account {
             font-size: 3rem;
-            color: #0b9b9b;
+            color    : #0b9b9b;
         }
     }
 }
