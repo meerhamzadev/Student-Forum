@@ -1,32 +1,24 @@
 import React from 'react'
-import {Button, IconButton} from '@material-ui/core'
+import { Button } from '@material-ui/core'
+import { AccountCircle } from '@material-ui/icons'
 
-function RegistrationPage()
-{
+function RegistrationPage() {
     return (
-         <div className="reg__page">
+        <div className="reg__page">
+            <AccountCircle className="reg__page__avatar" />
+            <form className="reg__page__form">
+                <input className="reg__page__form__input" type="text" placeholder="Enter the Name" />
+                <input className="reg__page__form__input" type="text" placeholder="Enter the Email" />
+                <input className="reg__page__form__input" type="password" placeholder="Type the Password" />
+                <input className="reg__page__form__input" type="password" placeholder="Retype Password to Confirm" />
 
-             <div className="reg__page__form">
+                <div className="reg__page__form__buttons">
+                    <Button className="reg__page__form__buttons__button" >Back</Button>
+                    <Button className="reg__page__form__buttons__button" >Register</Button>
 
-                  <form>
-                      <label>Username: </label>
-                      <input type="text"></input><br></br>
-                      <label>Email: </label>
-                      <input type="text"></input><br></br>
-                      <label>Password: </label>
-                      <input type="password"></input><br></br>
-                      <label>Confirm: </label>
-                      <input type="password"></input><br></br>
-                      <Button>Register</Button>
-                  </form>
-
-             </div>
-
-             <div className="reg__page__prev">
-                 <Button>Back</Button>
-            </div>
-
-         </div>
+                </div>
+            </form>
+        </div>
     )
 }
 

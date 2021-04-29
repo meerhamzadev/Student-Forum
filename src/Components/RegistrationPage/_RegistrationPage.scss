@@ -1,87 +1,70 @@
-.reg__page
-{
-    background-image   : url("./Components/Assets/RegisterBackground.png");
-    background-size    : cover;
-    background-repeat  : no-repeat;
-    background-position: center;
-    height             : 100vh;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+@import '../globalStyles/Button';
 
-    &__form
-    {
-        position: absolute;
-        top: 45%;
-        left: 60%;
-        transform: translate(-50%, -50%);
-        text-decoration: none;
-        width: 50rem;
+.reg__page {
+    background-image : url("./Components/Assets/RegisterBackground.png");
+    background-size  : cover;
+    background-repeat: no-repeat;
+    height           : 100vh;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
 
-        label
-        {
-            color: gray;
-            width: 6rem;
-            display: inline-block;
-            font-size: 1.1rem;
+    .reg__page__avatar {
+        flex-grow : .25;
+        color     : #0b9b9b;
+        font-size : 15rem;
+        align-self: center;
+    }
 
-        }
+    &__form {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-items    : flex-start;
+        gap            : 1.3rem;
+        flex-grow      : .75;
 
-        input 
-        {
-            border: .1rem solid gray;
-            border-radius: 2rem;
-            text-decoration: none;
-            outline: none;
-            padding: .4rem 1rem .4rem 1rem;
-            margin-bottom: .5rem;
-            width: 40%;
-            font-size: 1.2rem;
-            color:gray;
+        &__input {
+            border       : .05rem solid gray;
+            border-radius: .7rem;
+            outline      : none;
+            padding      : .68rem 1rem .55rem 1rem;
+            width        : 40%;
+            font-size    : 1.8rem;
+            color        : gray;
 
-        }
-
-        BUTTON 
-        {
-            display: block;
-            margin-top: 2rem;
-            margin-left: 20rem;
-            max-height: 34px;
-            width: 8rem;
-            border-radius: 1rem;
-            color: #f3feff;
-            background-color: #0b9b9b;
-        
-            &:hover {
-                background-color: #aff5fd;
-                color: #078585;
+            &:focus {
+                border: 2px solid #0b9b9b;
             }
 
         }
-    }
 
-    &__prev
-    {
-        position: absolute;
-        margin-top: 35rem;
-        margin-left: 5rem;
+        &__buttons {
+            display        : flex;
+            width          : 40%;
+            margin-top     : 1.3rem;
+            justify-content: space-between;
 
-        BUTTON 
-        {
-            display: block;
-            max-height: 34px;
-            width: 8rem;
-            border-radius: 1rem;
-            color: #f3feff;
-            background-color: #0b9b9b;
-        
-            &:hover {
-                background-color: #aff5fd;
-                color: #078585;
+            .reg__page__form__buttons__button {
+                width           : 12.8rem;
+                color           : #f3feff;
+                background-color: #0b9b9b;
+                @extend %buttonStyle;
+
+                &:first-child {
+                    background-color: rgb(26, 185, 26);
+
+                    &:hover {
+                        background-color: rgb(5, 136, 5);
+                        color           : white;
+                    }
+                }
+
+                &:hover {
+                    background-color: #aff5fd;
+                    color           : #078585;
+                }
             }
-            
         }
-
     }
-
 }

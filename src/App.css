@@ -1,4 +1,4 @@
-.navbar .navbar__buttons__loginButton, .WelcomePage__Body__Description__Button {
+.navbar .navbar__buttons__loginButton, .login__page__form .login__page__form__button, .reg__page__form__buttons .reg__page__form__buttons__button, .WelcomePage__Body__Description__Button {
   padding: .48rem .8rem;
   font-size: 1.44rem;
   border: none;
@@ -8,7 +8,7 @@
   letter-spacing: .032rem;
 }
 
-.navbar .navbar__buttons__loginButton:hover, .WelcomePage__Body__Description__Button:hover {
+.navbar .navbar__buttons__loginButton:hover, .login__page__form .login__page__form__button:hover, .reg__page__form__buttons .reg__page__form__buttons__button:hover, .WelcomePage__Body__Description__Button:hover {
   cursor: pointer;
 }
 
@@ -159,138 +159,82 @@
   background-image: url("./Components/Assets/LoginBackground.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.login__page .login__page__avatar {
+  color: #0b9b9b;
+  font-size: 12rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .login__page__form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-decoration: none;
-  width: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50rem;
+  gap: 1.5rem;
+  padding: 1rem 0rem;
 }
 
-.login__page__form label {
-  color: gray;
-  width: 6rem;
-  display: inline-block;
-  font-size: 1.1rem;
-}
-
-.login__page__form input {
-  border: .1rem solid gray;
-  border-radius: 2rem;
-  text-decoration: none;
+.login__page__form__input {
+  border: .05rem solid gray;
+  border-radius: .7rem;
   outline: none;
-  padding: .4rem 1rem .4rem 1rem;
-  margin-bottom: .5rem;
-  margin-left: 1rem;
-  width: 60%;
-  font-size: 1.2rem;
+  padding: .68rem 1rem .55rem 1rem;
+  width: 80%;
+  font-size: 1.8rem;
   color: gray;
+}
+
+.login__page__form__input:focus {
+  border: 2px solid #0b9b9b;
 }
 
 .login__page__form a {
   text-decoration: none;
   color: blue;
-  font-size: 1rem;
-  margin-left: 7.2rem;
+  font-size: 1.6rem;
 }
 
-.login__page__form BUTTON {
-  display: block;
-  margin-top: 2rem;
-  margin-left: 10rem;
-  max-height: 34px;
-  width: 8rem;
-  border-radius: 0.5rem;
+.login__page__form .login__page__form__button {
+  width: 12.8rem;
   color: #f3feff;
   background-color: #0b9b9b;
 }
 
-.login__page__form BUTTON:hover {
+.login__page__form .login__page__form__button:hover {
   background-color: #aff5fd;
   color: #078585;
 }
 
-.reg__page {
-  background-image: url("./Components/Assets/RegisterBackground.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
- 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
- sans-serif;
-}
-
-.reg__page__form {
-  position: absolute;
-  top: 45%;
-  left: 60%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-decoration: none;
-  width: 50rem;
-}
-
-.reg__page__form label {
-  color: gray;
-  width: 6rem;
-  display: inline-block;
-  font-size: 1.1rem;
-}
-
-.reg__page__form input {
-  border: .1rem solid gray;
-  border-radius: 2rem;
-  text-decoration: none;
-  outline: none;
-  padding: .4rem 1rem .4rem 1rem;
-  margin-bottom: .5rem;
-  width: 40%;
-  font-size: 1.2rem;
-  color: gray;
-}
-
-.reg__page__form BUTTON {
-  display: block;
-  margin-top: 2rem;
-  margin-left: 20rem;
-  max-height: 34px;
-  width: 8rem;
-  border-radius: 1rem;
-  color: #f3feff;
-  background-color: #0b9b9b;
-}
-
-.reg__page__form BUTTON:hover {
-  background-color: #aff5fd;
-  color: #078585;
-}
-
-.reg__page__prev {
-  position: absolute;
-  margin-top: 35rem;
-  margin-left: 5rem;
-}
-
-.reg__page__prev BUTTON {
-  display: block;
-  max-height: 34px;
-  width: 8rem;
-  border-radius: 1rem;
-  color: #f3feff;
-  background-color: #0b9b9b;
-}
-
-.reg__page__prev BUTTON:hover {
-  background-color: #aff5fd;
-  color: #078585;
-.navbar .navbar__buttons__loginButton, .WelcomePage__Body__Description__Button {
+.navbar .navbar__buttons__loginButton, .login__page__form .login__page__form__button, .reg__page__form__buttons .reg__page__form__buttons__button, .WelcomePage__Body__Description__Button {
   padding: .48rem .8rem;
   font-size: 1.44rem;
   border: none;
@@ -300,7 +244,113 @@
   letter-spacing: .032rem;
 }
 
-.navbar .navbar__buttons__loginButton:hover, .WelcomePage__Body__Description__Button:hover {
+.navbar .navbar__buttons__loginButton:hover, .login__page__form .login__page__form__button:hover, .reg__page__form__buttons .reg__page__form__buttons__button:hover, .WelcomePage__Body__Description__Button:hover {
+  cursor: pointer;
+}
+
+.reg__page {
+  background-image: url("./Components/Assets/RegisterBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reg__page .reg__page__avatar {
+  -webkit-box-flex: .25;
+      -ms-flex-positive: .25;
+          flex-grow: .25;
+  color: #0b9b9b;
+  font-size: 15rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.reg__page__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1.3rem;
+  -webkit-box-flex: .75;
+      -ms-flex-positive: .75;
+          flex-grow: .75;
+}
+
+.reg__page__form__input {
+  border: .05rem solid gray;
+  border-radius: .7rem;
+  outline: none;
+  padding: .68rem 1rem .55rem 1rem;
+  width: 40%;
+  font-size: 1.8rem;
+  color: gray;
+}
+
+.reg__page__form__input:focus {
+  border: 2px solid #0b9b9b;
+}
+
+.reg__page__form__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  margin-top: 1.3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reg__page__form__buttons .reg__page__form__buttons__button {
+  width: 12.8rem;
+  color: #f3feff;
+  background-color: #0b9b9b;
+}
+
+.reg__page__form__buttons .reg__page__form__buttons__button:first-child {
+  background-color: #1ab91a;
+}
+
+.reg__page__form__buttons .reg__page__form__buttons__button:first-child:hover {
+  background-color: #058805;
+  color: white;
+}
+
+.reg__page__form__buttons .reg__page__form__buttons__button:hover {
+  background-color: #aff5fd;
+  color: #078585;
+}
+
+.navbar .navbar__buttons__loginButton, .login__page__form .login__page__form__button, .reg__page__form__buttons .reg__page__form__buttons__button, .WelcomePage__Body__Description__Button {
+  padding: .48rem .8rem;
+  font-size: 1.44rem;
+  border: none;
+  outline: none;
+  border-radius: .64rem;
+  text-transform: uppercase;
+  letter-spacing: .032rem;
+}
+
+.navbar .navbar__buttons__loginButton:hover, .login__page__form .login__page__form__button:hover, .reg__page__form__buttons .reg__page__form__buttons__button:hover, .WelcomePage__Body__Description__Button:hover {
   cursor: pointer;
 }
 

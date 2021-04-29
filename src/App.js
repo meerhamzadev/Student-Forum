@@ -8,9 +8,10 @@ import WelcomePage from './Components/WelcomePage/WelcomePage';
 function App() {
   return (
     <>
-      <RegistrationPage />
-      {/* <WelcomePage /> */}
-      <HomePage />
+      <WelcomePage />
+      {/* <HomePage />
+      <RegistrationPage /> */}
+      {/* <LoginPage /> */}
     </>
   );
 }

@@ -1,71 +1,61 @@
-.login__page
-{    
-    background-image   : url("./Components/Assets/LoginBackground.png");
-    background-size    : cover;
-    background-repeat  : no-repeat;
-    background-position: center;
-    height             : 100vh;
+.login__page {
+    background-image : url("./Components/Assets/LoginBackground.png");
+    background-size  : cover;
+    background-repeat: no-repeat;
+    height           : 100vh;
+    display          : flex;
+    justify-content  : center;
+    align-items      : center;
+    flex-direction   : column;
+    gap              : 1rem;
 
-    &__form
-    {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-decoration: none;
-        width: 25rem;
+    .login__page__avatar {
+        color     : #0b9b9b;
+        font-size : 12rem;
+        align-self: center;
+    }
 
-        label
-        {
-            color: gray;
-            width: 6rem;
-            display: inline-block;
-            font-size: 1.1rem;
+    &__form {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        flex-direction : column;
+        width          : 50rem;
+        gap            : 1.5rem;
+        padding        : 1rem 0rem;
 
+        &__input {
+            border       : .05rem solid gray;
+            border-radius: .7rem;
+            outline      : none;
+            padding      : .68rem 1rem .55rem 1rem;
+            width        : 80%;
+            font-size    : 1.8rem;
+            color        : gray;
+
+            &:focus {
+                border: 2px solid #0b9b9b;
+            }
         }
 
-        input 
-        {
-            border: .1rem solid gray;
-            border-radius: 2rem;
+        a {
             text-decoration: none;
-            outline: none;
-            padding: .4rem 1rem .4rem 1rem;
-            margin-bottom: .5rem;
-            margin-left: 1rem;
-            width: 60%;
-            font-size: 1.2rem;
-            color:gray;
-
+            color          : blue;
+            font-size      : 1.6rem;
         }
 
-        a 
-        {
-            text-decoration: none;
-            color: blue;
-            font-size: 1rem;
-            margin-left: 7.2rem;
-        }
+        .login__page__form__button {
 
-        BUTTON 
-        {
-            display: block;
-            margin-top: 2rem;
-            margin-left: 10rem;
-            max-height: 34px;
-            width: 8rem;
-            border-radius: 0.5rem;
-            color: #f3feff;
+            width           : 12.8rem;
+            color           : #f3feff;
             background-color: #0b9b9b;
+            @extend %buttonStyle;
 
             &:hover {
-            background-color: #aff5fd;
-            color: #078585;
+                background-color: #aff5fd;
+                color           : #078585;
             }
-
         }
-
-
     }
 
 
