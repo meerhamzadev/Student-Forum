@@ -1,0 +1,55 @@
+@import '../globalStyles/Button';
+
+.WelcomePage {
+    background-image   : url('./Components/Assets/welcomeBackground.png');
+    background-position: center;
+    background-size    : cover;
+    height             : 100vh;
+    font-size          : 10px;
+
+    &__Body {
+        margin-top     : 5em;
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        padding-left   : 9em;
+        max-width      : 25%;
+
+        &__Title {
+            display       : flex;
+            flex-direction: column;
+            color         : #283e71;
+
+            span {
+                font-weight   : lighter;
+                font-size     : 2.5em;
+                letter-spacing: .05em;
+            }
+        }
+
+        &__Description {
+            display       : flex;
+            flex-direction: column;
+            margin-top    : 6em;
+
+            &__Text {
+                padding  : 1em 0em;
+                font-size: 1.6em;
+                color    : #1f7583;
+            }
+
+            &__Button {
+                background-color: #1f7583;
+                color           : white;
+                @extend %buttonStyle;
+                width         : 9em;
+                padding-top   : .7em;
+                padding-bottom: .7em;
+
+                &:hover {
+                    background-color: #4f8d96;
+                }
+            }
+        }
+    }
+}

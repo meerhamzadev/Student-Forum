@@ -6,7 +6,7 @@ import Navbar from '../NavBar/Navbar';
 function HomePage() {
     return (
         <div className="home">
-            <Navbar />
+            <Navbar isLoggedIn={true} />
 
             <div className="home__page">
                 <Recents />
