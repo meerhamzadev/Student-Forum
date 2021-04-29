@@ -5,15 +5,14 @@
     background-position: center;
     background-size    : cover;
     height             : 100vh;
-    font-size          : 10px;
 
     &__Body {
-        margin-top     : 5em;
+        margin-top     : 5rem;
         display        : flex;
         flex-direction : column;
         justify-content: center;
-        padding-left   : 9em;
-        max-width      : 25%;
+        padding-left   : 9rem;
+        max-width      : 31.68%;
 
         &__Title {
             display       : flex;
@@ -22,19 +21,19 @@
 
             span {
                 font-weight   : lighter;
-                font-size     : 2.5em;
-                letter-spacing: .05em;
+                font-size     : 5rem;
+                letter-spacing: .25rem;
             }
         }
 
         &__Description {
             display       : flex;
             flex-direction: column;
-            margin-top    : 6em;
+            margin-top    : 6rem;
 
             &__Text {
-                padding  : 1em 0em;
-                font-size: 1.6em;
+                padding  : 1.8rem 0rem;
+                font-size: 1.6rem;
                 color    : #1f7583;
             }
 
@@ -42,9 +41,9 @@
                 background-color: #1f7583;
                 color           : white;
                 @extend %buttonStyle;
-                width         : 9em;
-                padding-top   : .7em;
-                padding-bottom: .7em;
+                width         : 12rem;
+                padding-top   : 1rem;
+                padding-bottom: 1rem;
 
                 &:hover {
                     background-color: #4f8d96;

@@ -1,11 +1,11 @@
 .navbar .navbar__buttons__loginButton, .WelcomePage__Body__Description__Button {
-  padding: .3rem .5rem;
-  font-size: .9rem;
+  padding: .48rem .8rem;
+  font-size: 1.44rem;
   border: none;
   outline: none;
-  border-radius: .4rem;
+  border-radius: .64rem;
   text-transform: uppercase;
-  letter-spacing: .02rem;
+  letter-spacing: .032rem;
 }
 
 .navbar .navbar__buttons__loginButton:hover, .WelcomePage__Body__Description__Button:hover {
@@ -22,34 +22,34 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 80px;
-  padding-right: 40px;
+  padding-left: 8rem;
+  padding-right: 4rem;
   background-color: transparent;
-  font-size: 10px;
 }
 
-.navbar__logo {
-  color: #0b9b9b;
+.navbar .navbar__logo {
+  font-size: 2.4rem;
 }
 
 .navbar .navbar__buttons__button {
   color: #0b9b9b;
+  font-size: 1.4rem;
 }
 
 .navbar .navbar__buttons__menu {
-  font-size: 2rem;
+  font-size: 3.2rem;
   color: #0b9b9b;
 }
 
 .navbar .navbar__buttons__account {
-  font-size: 3rem;
+  font-size: 4.8rem;
   color: #0b9b9b;
 }
 
 .navbar .navbar__buttons__loginButton {
   background-color: #283e71;
   color: white;
-  width: 6rem;
+  width: 9.6rem;
 }
 
 .navbar .navbar__buttons__loginButton:hover {
@@ -68,7 +68,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 1.6rem;
+  padding-left: 2.56rem;
 }
 
 .dashboard {
@@ -76,30 +76,32 @@
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
-  margin-top: 4rem;
-  margin-left: 6rem;
+  margin-top: 6.4rem;
+  margin-left: 9.6rem;
 }
 
 .dashboard__welcome {
-  font-size: 2rem;
+  font-size: 3.2rem;
   color: #0b9b9b;
 }
 
 .dashboard__shortcuts {
-  margin-left: 12rem;
+  margin-left: 19.2rem;
   display: -ms-grid;
   display: grid;
-  gap: 2rem;
+  gap: 3.2rem;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
 }
 
 .dashboard__shortcuts .dashboard__shortcuts__button {
-  max-height: 34px;
-  width: 12rem;
-  border-radius: 0.5rem;
+  max-height: 3.4rem;
+  width: 19.2rem;
+  border-radius: 0.8rem;
   color: #f3feff;
   background-color: #0b9b9b;
+  font-size: 1.4rem;
+  letter-spacing: .04rem;
 }
 
 .dashboard__shortcuts .dashboard__shortcuts__button:hover {
@@ -121,11 +123,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-weight: 700;
 }
 
 .recents__heading {
   color: #0b9b9b;
-  margin-bottom: 1.4rem;
+  font-size: 3.2rem;
+  margin-bottom: 2.24rem;
 }
 
 .recents .recents__items {
@@ -133,12 +137,14 @@
   display: grid;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
-  gap: 1.4rem;
+  gap: 2.24rem;
 }
 
 .recents .recents__items .recents__items__item {
-  padding: 1.4rem;
-  width: 12rem;
+  font-size: 1.4rem;
+  letter-spacing: .04rem;
+  padding: 2.24rem;
+  width: 19.2rem;
   background-color: #aff5fd;
   color: #078585;
   font-weight: bold;
@@ -285,13 +291,13 @@
   background-color: #aff5fd;
   color: #078585;
 .navbar .navbar__buttons__loginButton, .WelcomePage__Body__Description__Button {
-  padding: .3rem .5rem;
-  font-size: .9rem;
+  padding: .48rem .8rem;
+  font-size: 1.44rem;
   border: none;
   outline: none;
-  border-radius: .4rem;
+  border-radius: .64rem;
   text-transform: uppercase;
-  letter-spacing: .02rem;
+  letter-spacing: .032rem;
 }
 
 .navbar .navbar__buttons__loginButton:hover, .WelcomePage__Body__Description__Button:hover {
@@ -303,11 +309,10 @@
   background-position: center;
   background-size: cover;
   height: 100vh;
-  font-size: 10px;
 }
 
 .WelcomePage__Body {
-  margin-top: 5em;
+  margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,8 +323,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 9em;
-  max-width: 25%;
+  padding-left: 9rem;
+  max-width: 31.68%;
 }
 
 .WelcomePage__Body__Title {
@@ -335,8 +340,8 @@
 
 .WelcomePage__Body__Title span {
   font-weight: lighter;
-  font-size: 2.5em;
-  letter-spacing: .05em;
+  font-size: 5rem;
+  letter-spacing: .25rem;
 }
 
 .WelcomePage__Body__Description {
@@ -347,21 +352,21 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 6em;
+  margin-top: 6rem;
 }
 
 .WelcomePage__Body__Description__Text {
-  padding: 1em 0em;
-  font-size: 1.6em;
+  padding: 1.8rem 0rem;
+  font-size: 1.6rem;
   color: #1f7583;
 }
 
 .WelcomePage__Body__Description__Button {
   background-color: #1f7583;
   color: white;
-  width: 9em;
-  padding-top: .7em;
-  padding-bottom: .7em;
+  width: 12rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .WelcomePage__Body__Description__Button:hover {
@@ -369,11 +374,11 @@
 }
 
 .SocialMedia {
-  margin-top: 4rem;
+  margin-top: 6.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 3rem;
+  gap: 4.8rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
