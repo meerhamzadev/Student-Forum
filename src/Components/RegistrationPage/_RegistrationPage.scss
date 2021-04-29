@@ -1,0 +1,87 @@
+.reg__page
+{
+    background-image   : url("./Components/Assets/RegisterBackground.png");
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center;
+    height             : 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+    &__form
+    {
+        position: absolute;
+        top: 45%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        text-decoration: none;
+        width: 50rem;
+
+        label
+        {
+            color: gray;
+            width: 6rem;
+            display: inline-block;
+            font-size: 1.1rem;
+
+        }
+
+        input 
+        {
+            border: .1rem solid gray;
+            border-radius: 2rem;
+            text-decoration: none;
+            outline: none;
+            padding: .4rem 1rem .4rem 1rem;
+            margin-bottom: .5rem;
+            width: 40%;
+            font-size: 1.2rem;
+            color:gray;
+
+        }
+
+        BUTTON 
+        {
+            display: block;
+            margin-top: 2rem;
+            margin-left: 20rem;
+            max-height: 34px;
+            width: 8rem;
+            border-radius: 1rem;
+            color: #f3feff;
+            background-color: #0b9b9b;
+        
+            &:hover {
+                background-color: #aff5fd;
+                color: #078585;
+            }
+
+        }
+    }
+
+    &__prev
+    {
+        position: absolute;
+        margin-top: 35rem;
+        margin-left: 5rem;
+
+        BUTTON 
+        {
+            display: block;
+            max-height: 34px;
+            width: 8rem;
+            border-radius: 1rem;
+            color: #f3feff;
+            background-color: #0b9b9b;
+        
+            &:hover {
+                background-color: #aff5fd;
+                color: #078585;
+            }
+            
+        }
+
+    }
+
+}

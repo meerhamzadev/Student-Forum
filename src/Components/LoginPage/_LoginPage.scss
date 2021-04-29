@@ -1,0 +1,72 @@
+.login__page
+{    
+    background-image   : url("./Components/Assets/LoginBackground.png");
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center;
+    height             : 100vh;
+
+    &__form
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-decoration: none;
+        width: 25rem;
+
+        label
+        {
+            color: gray;
+            width: 6rem;
+            display: inline-block;
+            font-size: 1.1rem;
+
+        }
+
+        input 
+        {
+            border: .1rem solid gray;
+            border-radius: 2rem;
+            text-decoration: none;
+            outline: none;
+            padding: .4rem 1rem .4rem 1rem;
+            margin-bottom: .5rem;
+            margin-left: 1rem;
+            width: 60%;
+            font-size: 1.2rem;
+            color:gray;
+
+        }
+
+        a 
+        {
+            text-decoration: none;
+            color: blue;
+            font-size: 1rem;
+            margin-left: 7.2rem;
+        }
+
+        BUTTON 
+        {
+            display: block;
+            margin-top: 2rem;
+            margin-left: 10rem;
+            max-height: 34px;
+            width: 8rem;
+            border-radius: 0.5rem;
+            color: #f3feff;
+            background-color: #0b9b9b;
+
+            &:hover {
+            background-color: #aff5fd;
+            color: #078585;
+            }
+
+        }
+
+
+    }
+
+
+}

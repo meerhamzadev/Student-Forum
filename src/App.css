@@ -124,6 +124,141 @@
   color: #f3feff;
 }
 
+.login__page {
+  background-image: url("./Components/Assets/LoginBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.login__page__form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-decoration: none;
+  width: 25rem;
+}
+
+.login__page__form label {
+  color: gray;
+  width: 6rem;
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+.login__page__form input {
+  border: .1rem solid gray;
+  border-radius: 2rem;
+  text-decoration: none;
+  outline: none;
+  padding: .4rem 1rem .4rem 1rem;
+  margin-bottom: .5rem;
+  margin-left: 1rem;
+  width: 60%;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.login__page__form a {
+  text-decoration: none;
+  color: blue;
+  font-size: 1rem;
+  margin-left: 7.2rem;
+}
+
+.login__page__form BUTTON {
+  display: block;
+  margin-top: 2rem;
+  margin-left: 10rem;
+  max-height: 34px;
+  width: 8rem;
+  border-radius: 0.5rem;
+  color: #f3feff;
+  background-color: #0b9b9b;
+}
+
+.login__page__form BUTTON:hover {
+  background-color: #aff5fd;
+  color: #078585;
+}
+
+.reg__page {
+  background-image: url("./Components/Assets/RegisterBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.reg__page__form {
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-decoration: none;
+  width: 50rem;
+}
+
+.reg__page__form label {
+  color: gray;
+  width: 6rem;
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+.reg__page__form input {
+  border: .1rem solid gray;
+  border-radius: 2rem;
+  text-decoration: none;
+  outline: none;
+  padding: .4rem 1rem .4rem 1rem;
+  margin-bottom: .5rem;
+  width: 40%;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.reg__page__form BUTTON {
+  display: block;
+  margin-top: 2rem;
+  margin-left: 20rem;
+  max-height: 34px;
+  width: 8rem;
+  border-radius: 1rem;
+  color: #f3feff;
+  background-color: #0b9b9b;
+}
+
+.reg__page__form BUTTON:hover {
+  background-color: #aff5fd;
+  color: #078585;
+}
+
+.reg__page__prev {
+  position: absolute;
+  margin-top: 35rem;
+  margin-left: 5rem;
+}
+
+.reg__page__prev BUTTON {
+  display: block;
+  max-height: 34px;
+  width: 8rem;
+  border-radius: 1rem;
+  color: #f3feff;
+  background-color: #0b9b9b;
+}
+
+.reg__page__prev BUTTON:hover {
+  background-color: #aff5fd;
+  color: #078585;
+}
+
 * {
   margin: 0;
   padding: 0;
