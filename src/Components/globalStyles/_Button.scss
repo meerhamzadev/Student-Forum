@@ -1,13 +1,13 @@
 %buttonStyle {
-    padding       : .48rem .8rem;
-    font-size     : 1.44rem;
-    border        : none;
-    outline       : none;
-    border-radius : .64rem;
-    text-transform: uppercase;
-    letter-spacing: .032rem;
+    max-height      : 3.4rem;
+    width           : 19.2rem;
+    border-radius   : 0.8rem;
+    color           : #f3feff;
+    background-color: #0b9b9b;
+    font-size       : 1.4rem;
 
     &:hover {
-        cursor: pointer;
+        background-color: #aff5fd;
+        color           : #0b9b9b;
     }
 }

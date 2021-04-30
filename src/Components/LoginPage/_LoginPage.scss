@@ -45,16 +45,7 @@
         }
 
         .login__page__form__button {
-
-            width           : 12.8rem;
-            color           : #f3feff;
-            background-color: #0b9b9b;
             @extend %buttonStyle;
-
-            &:hover {
-                background-color: #aff5fd;
-                color           : #078585;
-            }
         }
     }
 

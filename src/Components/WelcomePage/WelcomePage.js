@@ -1,3 +1,4 @@
+import {Button} from '@material-ui/core'
 import React from 'react'
 import Navbar from '../NavBar/Navbar'
 import SocialMedia from '../SocialMedia/SocialMedia'
@@ -16,10 +17,10 @@ const Welcome = () => (
                     consectetur adipisicing elit. Inventore veniam quibusdam
                     sunt adipisci deserunt totam aliquid sit saepe, impedit.
                 </p>
-
-                <button className="WelcomePage__Body__Description__Button">
+                
+                <Button className="WelcomePage__Body__Description__Button">
                     Learn More
-                </button>
+                </Button>
             </div>
             <SocialMedia />
         </div>

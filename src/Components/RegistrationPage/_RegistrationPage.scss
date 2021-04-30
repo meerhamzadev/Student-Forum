@@ -46,23 +46,15 @@
             justify-content: space-between;
 
             .reg__page__form__buttons__button {
-                width           : 12.8rem;
-                color           : #f3feff;
-                background-color: #0b9b9b;
                 @extend %buttonStyle;
 
                 &:first-child {
                     background-color: rgb(26, 185, 26);
 
                     &:hover {
-                        background-color: rgb(5, 136, 5);
-                        color           : white;
+                        background-color: rgb(193, 255, 193);
+                        color           : rgb(11, 129, 0);
                     }
-                }
-
-                &:hover {
-                    background-color: #aff5fd;
-                    color           : #078585;
                 }
             }
         }

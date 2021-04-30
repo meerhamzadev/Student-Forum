@@ -17,7 +17,7 @@
         &__Title {
             display       : flex;
             flex-direction: column;
-            color         : #283e71;
+            color         : #201251;
 
             span {
                 font-weight   : lighter;
@@ -34,19 +34,15 @@
             &__Text {
                 padding  : 1.8rem 0rem;
                 font-size: 1.6rem;
-                color    : #1f7583;
+                color    : #0b9b9b;
             }
 
-            &__Button {
-                background-color: #1f7583;
-                color           : white;
+            .WelcomePage__Body__Description__Button {
                 @extend %buttonStyle;
-                width         : 12rem;
-                padding-top   : 1rem;
-                padding-bottom: 1rem;
 
                 &:hover {
-                    background-color: #4f8d96;
+                    color: #f3feff;
+                    background-color: #201251;
                 }
             }
         }

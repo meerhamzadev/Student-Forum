@@ -1,15 +1,15 @@
-.navbar .navbar__buttons__loginButton, .login__page__form .login__page__form__button, .reg__page__form__buttons .reg__page__form__buttons__button, .WelcomePage__Body__Description__Button {
-  padding: .48rem .8rem;
-  font-size: 1.44rem;
-  border: none;
-  outline: none;
-  border-radius: .64rem;
-  text-transform: uppercase;
-  letter-spacing: .032rem;
+.dashboard__shortcuts .dashboard__shortcuts__button, .login__page__form .login__page__form__button, .reg__page__form__buttons .reg__page__form__buttons__button, .WelcomePage__Body__Description .WelcomePage__Body__Description__Button {
+  max-height: 3.4rem;
+  width: 19.2rem;
+  border-radius: 0.8rem;
+  color: #f3feff;
+  background-color: #0b9b9b;
+  font-size: 1.4rem;
 }
 
-.navbar .navbar__buttons__loginButton:hover, .login__page__form .login__page__form__button:hover, .reg__page__form__buttons .reg__page__form__buttons__button:hover, .WelcomePage__Body__Description__Button:hover {
-  cursor: pointer;
+.dashboard__shortcuts .dashboard__shortcuts__button:hover, .login__page__form .login__page__form__button:hover, .reg__page__form__buttons .reg__page__form__buttons__button:hover, .WelcomePage__Body__Description .WelcomePage__Body__Description__Button:hover {
+  background-color: #aff5fd;
+  color: #0b9b9b;
 }
 
 .navbar {
@@ -31,7 +31,7 @@
   font-size: 2.4rem;
 }
 
-.navbar .navbar__buttons__button {
+.navbar .navbar__buttons__logedIn {
   color: #0b9b9b;
   font-size: 1.4rem;
 }
@@ -46,14 +46,21 @@
   color: #0b9b9b;
 }
 
-.navbar .navbar__buttons__loginButton {
-  background-color: #283e71;
-  color: white;
-  width: 9.6rem;
+.navbar .navbar__buttons__notLogedIn {
+  color: #0b9b9b;
+  font-size: 1.4rem;
 }
 
-.navbar .navbar__buttons__loginButton:hover {
-  background-color: #001e63;
+.navbar .navbar__buttons .navbar__buttons__loginButton {
+  background-color: #201251;
+  color: #f3feff;
+  width: 9.6rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+}
+
+.navbar .navbar__buttons .navbar__buttons__loginButton:hover {
+  background-color: #4c49a2;
 }
 
 .home {
@@ -92,21 +99,6 @@
   gap: 3.2rem;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
-}
-
-.dashboard__shortcuts .dashboard__shortcuts__button {
-  max-height: 3.4rem;
-  width: 19.2rem;
-  border-radius: 0.8rem;
-  color: #f3feff;
-  background-color: #0b9b9b;
-  font-size: 1.4rem;
-  letter-spacing: .04rem;
-}
-
-.dashboard__shortcuts .dashboard__shortcuts__button:hover {
-  background-color: #aff5fd;
-  color: #078585;
 }
 
 .recents {
@@ -223,29 +215,18 @@
   font-size: 1.6rem;
 }
 
-.login__page__form .login__page__form__button {
-  width: 12.8rem;
+.dashboard__shortcuts .dashboard__shortcuts__button, .login__page__form .login__page__form__button, .reg__page__form__buttons .reg__page__form__buttons__button, .WelcomePage__Body__Description .WelcomePage__Body__Description__Button {
+  max-height: 3.4rem;
+  width: 19.2rem;
+  border-radius: 0.8rem;
   color: #f3feff;
   background-color: #0b9b9b;
+  font-size: 1.4rem;
 }
 
-.login__page__form .login__page__form__button:hover {
+.dashboard__shortcuts .dashboard__shortcuts__button:hover, .login__page__form .login__page__form__button:hover, .reg__page__form__buttons .reg__page__form__buttons__button:hover, .WelcomePage__Body__Description .WelcomePage__Body__Description__Button:hover {
   background-color: #aff5fd;
-  color: #078585;
-}
-
-.navbar .navbar__buttons__loginButton, .login__page__form .login__page__form__button, .reg__page__form__buttons .reg__page__form__buttons__button, .WelcomePage__Body__Description__Button {
-  padding: .48rem .8rem;
-  font-size: 1.44rem;
-  border: none;
-  outline: none;
-  border-radius: .64rem;
-  text-transform: uppercase;
-  letter-spacing: .032rem;
-}
-
-.navbar .navbar__buttons__loginButton:hover, .login__page__form .login__page__form__button:hover, .reg__page__form__buttons .reg__page__form__buttons__button:hover, .WelcomePage__Body__Description__Button:hover {
-  cursor: pointer;
+  color: #0b9b9b;
 }
 
 .reg__page {
@@ -320,38 +301,27 @@
           justify-content: space-between;
 }
 
-.reg__page__form__buttons .reg__page__form__buttons__button {
-  width: 12.8rem;
-  color: #f3feff;
-  background-color: #0b9b9b;
-}
-
 .reg__page__form__buttons .reg__page__form__buttons__button:first-child {
   background-color: #1ab91a;
 }
 
 .reg__page__form__buttons .reg__page__form__buttons__button:first-child:hover {
-  background-color: #058805;
-  color: white;
+  background-color: #c1ffc1;
+  color: #0b8100;
 }
 
-.reg__page__form__buttons .reg__page__form__buttons__button:hover {
+.dashboard__shortcuts .dashboard__shortcuts__button, .login__page__form .login__page__form__button, .reg__page__form__buttons .reg__page__form__buttons__button, .WelcomePage__Body__Description .WelcomePage__Body__Description__Button {
+  max-height: 3.4rem;
+  width: 19.2rem;
+  border-radius: 0.8rem;
+  color: #f3feff;
+  background-color: #0b9b9b;
+  font-size: 1.4rem;
+}
+
+.dashboard__shortcuts .dashboard__shortcuts__button:hover, .login__page__form .login__page__form__button:hover, .reg__page__form__buttons .reg__page__form__buttons__button:hover, .WelcomePage__Body__Description .WelcomePage__Body__Description__Button:hover {
   background-color: #aff5fd;
-  color: #078585;
-}
-
-.navbar .navbar__buttons__loginButton, .login__page__form .login__page__form__button, .reg__page__form__buttons .reg__page__form__buttons__button, .WelcomePage__Body__Description__Button {
-  padding: .48rem .8rem;
-  font-size: 1.44rem;
-  border: none;
-  outline: none;
-  border-radius: .64rem;
-  text-transform: uppercase;
-  letter-spacing: .032rem;
-}
-
-.navbar .navbar__buttons__loginButton:hover, .login__page__form .login__page__form__button:hover, .reg__page__form__buttons .reg__page__form__buttons__button:hover, .WelcomePage__Body__Description__Button:hover {
-  cursor: pointer;
+  color: #0b9b9b;
 }
 
 .WelcomePage {
@@ -385,7 +355,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #283e71;
+  color: #201251;
 }
 
 .WelcomePage__Body__Title span {
@@ -408,19 +378,12 @@
 .WelcomePage__Body__Description__Text {
   padding: 1.8rem 0rem;
   font-size: 1.6rem;
-  color: #1f7583;
+  color: #0b9b9b;
 }
 
-.WelcomePage__Body__Description__Button {
-  background-color: #1f7583;
-  color: white;
-  width: 12rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.WelcomePage__Body__Description__Button:hover {
-  background-color: #4f8d96;
+.WelcomePage__Body__Description .WelcomePage__Body__Description__Button:hover {
+  color: #f3feff;
+  background-color: #201251;
 }
 
 .SocialMedia {
@@ -432,11 +395,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #283e71;
+  color: #201251;
 }
 
 .SocialMedia svg path:hover {
-  color: #4870cc;
+  color: #4c49a2;
   cursor: pointer;
 }
 

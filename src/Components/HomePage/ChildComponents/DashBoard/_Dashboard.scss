@@ -16,18 +16,7 @@
         grid-template-columns: auto auto;
 
         .dashboard__shortcuts__button {
-            max-height      : 3.4rem;
-            width           : 19.2rem;
-            border-radius   : 0.8rem;
-            color           : #f3feff;
-            background-color: #0b9b9b;
-            font-size       : 1.4rem;
-            letter-spacing  : .04rem;
-
-            &:hover {
-                background-color: #aff5fd;
-                color           : #078585;
-            }
+            @extend %buttonStyle;
         }
     }
 }
