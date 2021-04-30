@@ -14,7 +14,7 @@
     }
 
     .navbar__buttons {
-        &__button {
+        &__logedIn {
             color    : #0b9b9b;
             font-size: 1.4rem;
         }
@@ -28,15 +28,21 @@
             font-size: 4.8rem;
             color    : #0b9b9b;
         }
-
-        &__loginButton {
-            background-color: #283e71;
-            color           : white;
+        
+        &__notLogedIn {
+            color    : #0b9b9b;
+            font-size: 1.4rem;
+        }
+        
+        .navbar__buttons__loginButton {
+            background-color: #201251;
+            color           : #f3feff;
             width           : 9.6rem;
-            @extend %buttonStyle;
+            font-size: 1.2rem;
+            border-radius: 2rem;
 
             &:hover {
-                background-color: #001e63;
+                background-color: #4c49a2;
             }
         }
     }
