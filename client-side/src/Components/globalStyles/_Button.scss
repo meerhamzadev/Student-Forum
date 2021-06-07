@@ -1,7 +1,7 @@
 %buttonStyle {
-    max-height      : 3.4rem;
-    width           : 19.2rem;
-    border-radius   : 0.8rem;
+    max-height      : 3.4vw;
+    width           : 15.2vw;
+    border-radius   : 0.8vw;
     color           : #f3feff;
     background-color: #0b9b9b;
     font-size       : 1.4rem;
@@ -9,5 +9,12 @@
     &:hover {
         background-color: #aff5fd;
         color           : #0b9b9b;
+        font-weight     : bolder;
+    }
+    
+    @media (max-width: 440px) and (max-height: 900px) {
+        max-height: 10vw;
+        width: 40vw;
+        border-radius: 2vw;
     }
 }
