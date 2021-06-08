@@ -7,11 +7,11 @@
     height             : 100vh;
 
     &__Body {
-        margin-top     : 5rem;
+        margin-top     : 5vw;
         display        : flex;
         flex-direction : column;
         justify-content: center;
-        padding-left   : 9rem;
+        padding-left   : 6vw;
         max-width      : 31.68%;
 
         &__Title {
@@ -29,7 +29,7 @@
         &__Description {
             display       : flex;
             flex-direction: column;
-            margin-top    : 6rem;
+            margin-top    : 4vw;
 
             &__Text {
                 padding  : 1.8rem 0rem;

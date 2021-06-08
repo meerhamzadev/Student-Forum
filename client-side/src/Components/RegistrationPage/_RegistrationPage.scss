@@ -1,60 +1,80 @@
 @import '../globalStyles/Button';
 
-.reg__page {
+.reg {
     background-image : url("./Components/Assets/RegisterBackground.png");
     background-size  : cover;
     background-repeat: no-repeat;
     height           : 100vh;
-    display          : flex;
-    justify-content  : center;
-    align-items      : center;
-
-    .reg__page__avatar {
-        flex-grow : .25;
-        color     : #0b9b9b;
-        font-size : 15rem;
-        align-self: center;
-    }
-
-    &__form {
-        display        : flex;
-        flex-direction : column;
-        justify-content: center;
-        align-items    : flex-start;
-        gap            : 1.3rem;
-        flex-grow      : .75;
-
-        &__input {
-            border       : .05rem solid gray;
-            border-radius: .7rem;
-            outline      : none;
-            padding      : .68rem 1rem .55rem 1rem;
-            width        : 40%;
-            font-size    : 1.8rem;
-            color        : gray;
-
-            &:focus {
-                border: 2px solid #0b9b9b;
-            }
-
+    display: grid;
+    place-items: center;
+    
+    &__page {
+        display: grid;
+        place-items: center;
+        gap: 2vw;
+        
+        .reg__page__avatar {
+            color     : #0b9b9b;
+            font-size : 15rem;
         }
 
-        &__buttons {
-            display        : flex;
-            width          : 40%;
-            margin-top     : 1.3rem;
-            justify-content: space-between;
+        &__form {
+            display: grid;
+            place-items: center;
+            gap: 1vw;
 
-            .reg__page__form__buttons__button {
-                @extend %buttonStyle;
+            &__input {
+                border       : .05vw solid gray;
+                border-radius: .8vw;
+                outline      : none;
+                padding      : .68vw 1vw .55vw 1vw;
+                width        : 100%;
+                font-size    : 1.8rem;
+                color        : gray;
 
-                &:first-child {
-                    background-color: rgb(26, 185, 26);
+                &:focus {
+                    border: 2px solid #0b9b9b;
+                }
 
-                    &:hover {
-                        background-color: rgb(193, 255, 193);
-                        color           : rgb(11, 129, 0);
+            }
+
+            &__buttons {
+                display        : grid;
+                grid-template-columns: auto auto;
+                margin-top     : 1.3vw;
+                gap: 1vw;
+
+                .reg__page__form__buttons__button {
+                    @extend %buttonStyle;
+
+                    &:first-child {
+                        background-color: rgb(26, 185, 26);
+
+                        &:hover {
+                            background-color: rgb(193, 255, 193);
+                            color           : rgb(11, 129, 0);
+                        }
                     }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 440px) and (max-height: 900px) {
+        background-position: right;
+        
+        &__page {
+            gap: 4vw;
+            
+            &__form {
+                gap: 4vw;
+                
+                &__input {
+                    height: 10vw;
+                }
+                
+                &__buttons {
+                    gap: 2vw;
                 }
             }
         }
