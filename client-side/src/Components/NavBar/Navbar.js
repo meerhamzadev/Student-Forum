@@ -21,7 +21,7 @@ const Navbar = ({ isLoggedIn }) => {
                             <Button variant="extendedFab" className="navbar__buttons__logedIn" onClick={() => linkTo("/books")}>Books</Button>
                             <Button variant="extendedFab" className="navbar__buttons__logedIn" onClick={() => linkTo("/pastpapers")}>Past Papers</Button>
                             <Button variant="extendedFab" className="navbar__buttons__logedIn" onClick={() => linkTo("/exams")}>Exams</Button>
-                            <Button variant="extendedFab" className="navbar__buttons__logedIn" onClick={() => linkTo("/queries")}>Queries</Button>
+                            <Button variant="extendedFab" className="navbar__buttons__logedIn" onClick={() => linkTo("/timetable")}>Time Table</Button>
                             
                             <IconButton>
                                 <MenuRounded className="navbar__buttons__menu" />

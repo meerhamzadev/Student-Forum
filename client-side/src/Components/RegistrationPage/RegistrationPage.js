@@ -1,22 +1,28 @@
-import { Button } from '@material-ui/core';
-import { AccountCircle } from '@material-ui/icons';
-import React from 'react';
+import {Button} from '@material-ui/core';
+import {AccountCircle} from '@material-ui/icons';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import {Link} from 'react-router-dom';
+
 function RegistrationPage() {
     const goBack = () => {
         window.history.back();
     }
+    
     const registerUser = async (e) => {
         e.preventDefault();
+        
         let { user_name, email, user_password } = e.target;
+        
         let user = {
             name: user_name.value,
             email: email.value,
             user_password: user_password.value
         }
+        
         try {
             const response = await axios.post('http://localhost:5000/register', user)
+            
             if (response.status === 200) {
                 window.alert('User added Successfully');
                 document.querySelector('.reg__page__form__loginNavigator').click();
