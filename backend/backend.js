@@ -1,5 +1,5 @@
-const express = require('express');
-const users = require('./routes/users');
+import express, {json} from 'express';
+import users from './routes/users';
 const server = express();
 
 
@@ -11,7 +11,7 @@ server.use((req, res, next) => {
 });
 
 //express middle ware to convert receiving data into JSON format
-server.use(express.json());
+server.use(json());
 
 // utilizing routes of the application
 server.use(users)
