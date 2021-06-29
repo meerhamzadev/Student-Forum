@@ -1,6 +1,6 @@
-import {Button, IconButton} from '@material-ui/core';
-import {AccountCircle, MenuRounded} from '@material-ui/icons';
 import React from 'react';
+import { Button, IconButton } from '@material-ui/core';
+import { AccountCircle, MenuRounded } from '@material-ui/icons';
 
 const Navbar = ({ isLoggedIn }) => {
     const linkTo = (link) => {
@@ -8,7 +8,7 @@ const Navbar = ({ isLoggedIn }) => {
             window.open(link, "_self");
         }
     }
-    
+
     return (
         <nav className="navbar">
             <IconButton className="navbar__logo">LOGO</IconButton>
@@ -22,7 +22,7 @@ const Navbar = ({ isLoggedIn }) => {
                             <Button variant="extendedFab" className="navbar__buttons__logedIn" onClick={() => linkTo("/pastpapers")}>Past Papers</Button>
                             <Button variant="extendedFab" className="navbar__buttons__logedIn" onClick={() => linkTo("/exams")}>Exams</Button>
                             <Button variant="extendedFab" className="navbar__buttons__logedIn" onClick={() => linkTo("/timetable")}>Time Table</Button>
-                            
+
                             <IconButton>
                                 <MenuRounded className="navbar__buttons__menu" />
                             </IconButton>
@@ -32,11 +32,7 @@ const Navbar = ({ isLoggedIn }) => {
                         </>
                     ) : (
                         <div className="navbar__buttons__notLogedIn">
-                            <Button variant="extendedFab" className="navbar__buttons__notLogedIn" onClick={() => linkTo("/home")}>Home</Button>
-                            <Button variant="extendedFab" className="navbar__buttons__notLogedIn" onClick={() => linkTo("/About")}>About Us</Button>
-                            <Button variant="extendedFab" className="navbar__buttons__notLogedIn" onClick={() => linkTo("/Contact")}>Contact Us</Button>
-                            <Button variant="extendedFab" className="navbar__buttons__notLogedIn" onClick={() => linkTo("/Services")}>Services</Button>
-                            
+
                             <Button className="navbar__buttons__loginButton" onClick={() => linkTo("/login")}>Login</Button>
                         </div>
                     )

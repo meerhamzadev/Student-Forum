@@ -1,8 +1,8 @@
-import {Button} from '@material-ui/core';
-import {AccountCircle} from '@material-ui/icons';
+import { Button } from '@material-ui/core';
+import { AccountCircle } from '@material-ui/icons';
 import axios from 'axios';
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function LoginPage() {
       const goBack = () => {
@@ -11,17 +11,17 @@ function LoginPage() {
 
       const loggedIn = async (e) => {
             e.preventDefault();
-            
+
             const { email, password } = e.target;
 
             const Data = {
                   email: email.value,
                   password: password.value
             }
-            
+
             try {
                   const response = await axios.post('http://localhost:5000/login', Data);
-                  
+
                   if (response.status === 200) {
                         const switchLink = document.querySelector('.login__page__homePageLink');
                         switchLink.click();
@@ -37,7 +37,7 @@ function LoginPage() {
             }
 
       }
-      
+
       return (
             <div className="login">
                   <div className="login__page">
@@ -50,7 +50,7 @@ function LoginPage() {
                                     <Button type="submit" className="login__page__form__buttons__button" >Login</Button>
                               </div>
                               <div className="login__page__form__registerQuery">
-                                    <p>Don't have an account? <a href="/register">Create Account</a></p>
+                                    <p>Don't have an account? <Link to="/register">Create Account</Link></p>
                               </div>
                         </form>
                         <Link to="/home" className="login__page__homePageLink"> </Link>

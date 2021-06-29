@@ -1,7 +1,7 @@
-const express = require('express');
-const users = express.Router();
-const db = require('../database-connection/db-connection');
-const bcrypt = require('bcrypt');
+import { Router } from 'express';
+const users = Router();
+import db from '../database-connection/db-connection.js';
+import bcrypt from 'bcrypt';
 
 
 // to register/add a new user
@@ -34,18 +34,23 @@ users.post('/login', (req, res) => {
 
     db.query('SELECT * from USERS where email = ?', email, async (err, resp) => {
 
-        const isPasswordExist = await bcrypt.compare(password, resp[0].user_password);
-
         if (err)
-            res.status(500).send(err.message);
+            return res.status(500).send(err.message);
 
-        else if (resp.length !== 0 && isPasswordExist)
-            res.status(200).send('LoggedIn Successfully')
+        try {
+            const isPasswordExist = await bcrypt.compare(password, resp[0].user_password);
 
-        else
+            if (isPasswordExist)
+                res.status(200).send('LoggedIn Successfully')
+
+            else
+                res.status(404).send('User not exist');
+        }
+        catch (e) {
             res.status(404).send('User not exist');
+        }
 
     })
 })
 
-module.exports = users;
+export default users;
