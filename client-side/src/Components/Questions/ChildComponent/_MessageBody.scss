@@ -1,0 +1,31 @@
+.messagebody {
+    background-color: #3382cc;
+    width           : 50rem;
+    border-radius   : .5rem;
+    min-height      : 7rem;
+    padding         : 1rem;
+    margin-bottom   : 1rem;
+    overflow-wrap   : break-word;
+    box-shadow      : 0 5px 10px #63a9ebbe;
+
+    &__text {
+        color    : rgb(221, 215, 215);
+        font-size: 1.4rem;
+    }
+
+    &__tags {
+        display        : flex;
+        gap            : .8rem;
+        justify-content: flex-end;
+
+        li {
+            margin-top      : 1rem;
+            list-style      : none;
+            border-radius   : .5rem;
+            background-color: rgba(46, 46, 46, 0.719);
+            color           : white;
+            font-size       : 1.2rem;
+            padding         : .5rem;
+        }
+    }
+}
