@@ -6,9 +6,10 @@
 @import './Components/SocialMedia/SocialMedia';
 @import './Components/PastPapersPage/PastPapers';
 @import './Components/TimeTable/TimeTable';
+@import './Components/Questions/Questions';
 
 * {
-    margin : 0;
-    padding: 0;
+    margin    : 0;
+    padding   : 0;
     box-sizing: border-box;
 }
