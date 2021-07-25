@@ -9,7 +9,7 @@ import RegistrationPage from './Components/RegistrationPage/RegistrationPage';
 import { ContextWrapper } from './Components/TimeTable/TimeTableContext'
 import TimeTable from './Components/TimeTable/TimetablePage';
 import WelcomePage from './Components/WelcomePage/WelcomePage';
-import { PastPaperContextWrapper } from './Components/PastPapersPage/PastPaperContext';
+
 
 function App() {
   return (
@@ -19,13 +19,11 @@ function App() {
         <Route path="/home" component={HomePage} />
         <Route path="/login" component={LoginPage} />
         <Route path="/register" component={RegistrationPage} />
-        <PastPaperContextWrapper>
-          <Route path="/pastpapers" component={PastPapers} />
-        </PastPaperContextWrapper>
+        <Route path="/questions" component={Questions} />
+        <Route path="/pastpapers" component={PastPapers} />
         <ContextWrapper>
           <Route path="/timetable" component={TimeTable} />
         </ContextWrapper>
-        <Route path="/questions" component={Questions} />
       </Switch>
     </BrowserRouter>
   );
