@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Navbar from '../NavBar/Navbar';
 import ReactSelect from './ReactSelect';
-
+import { BooksContext } from './BooksContext';
 function Books() {
+    const [booksData, setBooksData] = useContext(BooksContext)
     return (
         <section className="books">
             <Navbar isLoggedIn />
@@ -14,10 +15,10 @@ function Books() {
                 <div className="books__container__books">
                     {
                         React.Children.toArray(booksData.map(bookItem => (
-                            <a href={bookItem.book_image} target="_blank" rel="noopener noreferrer" className="books__container__books__book">
-                                <h2>{bookItem.book_subject}</h2>
-                                <h4>{`Year: ${bookItem.book_year}`}</h4>
-                                <a href={bookItem.book_image} target="_blank" rel="noopener noreferrer">View</a>
+                            <a href={bookItem.book_file} target="_blank" rel="noopener noreferrer" className="books__container__books__book">
+                                <h2>{bookItem.book_name}</h2>
+                                <h4>{`Author: ${bookItem.book_author}`}</h4>
+                                <a href={bookItem.book_file} target="_blank" rel="noopener noreferrer">Read</a>
                             </a>
                         )))
                     }

@@ -4,6 +4,7 @@ const server = express();
 import questions from './routes/question.js'
 import timetable from './routes/timetable.js'
 import pastPaper from './routes/pastPapers.js';
+import books from './routes/books.js';
 
 // to resolve cors issue
 server.use((req, res, next) => {
@@ -20,6 +21,7 @@ server.use(users)
 server.use(questions);
 server.use(timetable);
 server.use(pastPaper);
+server.use(books);
 
 server.listen(5000, () => {
     console.log("server started successfully");
