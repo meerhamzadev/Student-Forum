@@ -460,12 +460,69 @@
   height: 100vh;
 }
 
-.timeTable {
+.dashboard__shortcuts .dashboard__shortcuts__button, .login__page__form__buttons .login__page__form__buttons__button, .reg__page__form__buttons .reg__page__form__buttons__button, .WelcomePage__Body__Description .WelcomePage__Body__Description__Button {
+  max-height: 3.4vw;
+  width: 15.2vw;
+  border-radius: 0.8vw;
+  color: #f3feff;
+  background-color: #0b9b9b;
+  font-size: 1.4rem;
+}
+
+.dashboard__shortcuts .dashboard__shortcuts__button:hover, .login__page__form__buttons .login__page__form__buttons__button:hover, .reg__page__form__buttons .reg__page__form__buttons__button:hover, .WelcomePage__Body__Description .WelcomePage__Body__Description__Button:hover {
+  background-color: #aff5fd;
+  color: #0b9b9b;
+  font-weight: bolder;
+}
+
+@media (max-width: 440px) and (max-height: 900px) {
+  .dashboard__shortcuts .dashboard__shortcuts__button, .login__page__form__buttons .login__page__form__buttons__button, .reg__page__form__buttons .reg__page__form__buttons__button, .WelcomePage__Body__Description .WelcomePage__Body__Description__Button {
+    max-height: 10vw;
+    width: 40vw;
+    border-radius: 2vw;
+  }
+}
+
+.timetable__page {
   background-image: url("./Components/Assets/TimeTableBackground.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.timetable__page__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.timetable__page__display {
+  height: 25rem;
+  margin-top: 2rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.timetable__page__button {
+  background-color: #201251 !important;
+  color: #f3feff !important;
+  height: 4rem !important;
+  margin-top: 1rem !important;
+}
+
+.timetable__page__button:hover {
+  background-color: #4c49a2 !important;
 }
 
 .questions {

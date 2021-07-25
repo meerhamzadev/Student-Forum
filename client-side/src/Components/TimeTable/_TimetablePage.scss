@@ -1,0 +1,41 @@
+@import '../globalStyles/Button';
+
+.timetable__page {
+    background-image   : url('./Components/Assets/TimeTableBackground.png');
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center;
+    height             : 100vh;
+    font-family        : -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+
+    &__options {
+        display        : flex;
+        justify-content: center;
+    }
+
+    &__display {
+        height         : 25rem;
+        margin-top     : 2rem;
+        margin-left    : 20rem;
+        margin-right   : 20rem;
+        display        : flex;
+        justify-content: center;
+
+    }
+
+    &__button {
+        background-color: #201251 !important;
+        color           : #f3feff !important;
+        height          : 4rem !important;
+        margin-top      : 1rem !important;
+
+        &:hover {
+            background-color: #4c49a2 !important;
+        }
+    }
+
+
+
+}
