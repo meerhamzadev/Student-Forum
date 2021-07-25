@@ -594,6 +594,83 @@
   background-color: #4c49a2 !important;
 }
 
+.books {
+  background-image: url("./Components/Assets/PastPapersBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.books__container__query {
+  padding-left: 3.5rem;
+}
+
+.books__container__books {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+  gap: 3rem;
+  padding-left: 4rem;
+}
+
+.books__container__books__book {
+  gap: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  border: 2px solid rgba(160, 157, 157, 0.849);
+  background-color: rgba(226, 225, 225, 0.568);
+  border-radius: .5rem;
+  padding: 1rem .8rem;
+  height: 15rem;
+  min-width: 27.6rem;
+}
+
+.books__container__books__book h2 {
+  color: #333131;
+  font-size: 2.3rem;
+}
+
+.books__container__books__book h4 {
+  color: rgba(73, 72, 72, 0.842);
+  font-size: 1.5rem;
+}
+
+.books__container__books__book a {
+  margin-top: .5rem;
+  text-decoration: none;
+  color: white;
+  background-color: #201251;
+  border-radius: .5rem;
+  text-align: center;
+  padding: .6rem .3rem;
+  font-size: 1.2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 7rem;
+}
+
+.books__container__books__book a:hover {
+  background-color: #30309c;
+}
+
 .questions {
   height: 100vh;
 }
