@@ -1,24 +1,28 @@
-import {Router} from 'express';
+import { Router } from 'express';
 import db from '../database-connection/db-connection.js';
 const pastPapers = Router();
 
-pastPapers.post('/pastpapers',
-    async (req, res) => {
-        const {year, department, subject} = req.body;
-        
-        db.query('SELECT * FROM pastpapers WHERE year = ? AND department = ? AND subject = ?', year, department, subject,
-            async (err, data) => {
-                if (err) {
-                    res.status(500).send(err.message);
-                }
-                else {
-                    res.json(
-                        {
-                            pastPaperData: data
-                        }
-                    )
-                }
+pastPapers.post('/pastpapers', (req, res) => {
+
+    const { Year, subject } = req.body;
+
+    db.query('SELECT * FROM pastpaper WHERE paper_year = ? and paper_subject = ?',
+        [Year, subject],
+        (err, data) => {
+            if (err) {
+                res.status(500).send(err.message);
             }
-        )
-    }
+            else {
+                res.json(
+                    {
+                        pastPaperData: data
+                    }
+                )
+            }
+        }
+    )
+}
 )
+
+
+export default pastPapers;

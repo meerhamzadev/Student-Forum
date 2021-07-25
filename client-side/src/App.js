@@ -9,6 +9,7 @@ import RegistrationPage from './Components/RegistrationPage/RegistrationPage';
 import { ContextWrapper } from './Components/TimeTable/TimeTableContext'
 import TimeTable from './Components/TimeTable/TimetablePage';
 import WelcomePage from './Components/WelcomePage/WelcomePage';
+import { PastPaperContextWrapper } from './Components/PastPapersPage/PastPaperContext';
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
         <Route path="/home" component={HomePage} />
         <Route path="/login" component={LoginPage} />
         <Route path="/register" component={RegistrationPage} />
-        <Route path="/pastpapers" component={PastPapers} />
+        <PastPaperContextWrapper>
+          <Route path="/pastpapers" component={PastPapers} />
+        </PastPaperContextWrapper>
         <ContextWrapper>
           <Route path="/timetable" component={TimeTable} />
         </ContextWrapper>
