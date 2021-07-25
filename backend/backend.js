@@ -2,6 +2,7 @@ import express from 'express';
 import users from './routes/users.js';
 const server = express();
 import questions from './routes/question.js'
+import timetable from './routes/timetable.js'
 
 // to resolve cors issue
 server.use((req, res, next) => {
@@ -16,6 +17,7 @@ server.use(express.json());
 // utilizing routes of the application
 server.use(users)
 server.use(questions);
+server.use(timetable);
 
 server.listen(5000, () => {
     console.log("server started successfully");

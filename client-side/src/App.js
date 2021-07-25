@@ -6,7 +6,8 @@ import LoginPage from './Components/LoginPage/LoginPage';
 import PastPapers from './Components/PastPapersPage/PastPapers';
 import Questions from './Components/Questions/Questions';
 import RegistrationPage from './Components/RegistrationPage/RegistrationPage';
-import TimeTable from './Components/TimeTable/TimeTable';
+import { ContextWrapper } from './Components/TimeTable/TimeTableContext'
+import TimeTable from './Components/TimeTable/TimetablePage';
 import WelcomePage from './Components/WelcomePage/WelcomePage';
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
         <Route path="/login" component={LoginPage} />
         <Route path="/register" component={RegistrationPage} />
         <Route path="/pastpapers" component={PastPapers} />
-        <Route path="/timetable" component={TimeTable} />
+        <ContextWrapper>
+          <Route path="/timetable" component={TimeTable} />
+        </ContextWrapper>
         <Route path="/questions" component={Questions} />
       </Switch>
     </BrowserRouter>
