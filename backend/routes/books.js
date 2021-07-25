@@ -1,12 +1,12 @@
-import {Router} from 'express';
+import { Router } from 'express';
 import db from '../database-connection/db-connection.js';
 const books = Router();
 
 books.post('/books',
     async (req, res) => {
-        const {department, session, section, subject} = req.body;
-        
-        db.query('SELECT * FROM books WHERE department = ? AND session = ? AND section = ? AND subject = ?', department, session, section, subject,
+        const { type } = req.body;
+
+        db.query('SELECT * FROM books WHERE book_type = ?', type,
             async (err, data) => {
                 if (err) {
                     res.status(500).send(err.message);
@@ -22,3 +22,5 @@ books.post('/books',
         )
     }
 )
+
+export default books;
