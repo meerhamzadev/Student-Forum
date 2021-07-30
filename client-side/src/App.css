@@ -93,7 +93,7 @@
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
   margin-top: 6.4rem;
-  margin-left: 9.6rem;
+  margin-left: 9.8rem;
 }
 
 .dashboard__welcome {
@@ -102,7 +102,7 @@
 }
 
 .dashboard__shortcuts {
-  margin-left: 19.2rem;
+  margin-left: 16rem;
   display: -ms-grid;
   display: grid;
   gap: 3.2rem;
