@@ -2,7 +2,7 @@
     display              : grid;
     grid-template-columns: auto auto;
     margin-top           : 6.4rem;
-    margin-left          : 9.6rem;
+    margin-left          : 9.8rem;
 
     &__welcome {
         font-size: 3.2rem;
@@ -10,7 +10,7 @@
     }
 
     &__shortcuts {
-        margin-left          : 19.2rem;
+        margin-left          : 16rem;
         display              : grid;
         gap                  : 3.2rem;
         grid-template-columns: auto auto;

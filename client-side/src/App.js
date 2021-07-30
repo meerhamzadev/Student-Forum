@@ -10,6 +10,8 @@ import { ContextWrapper } from './Components/TimeTable/TimeTableContext'
 import TimeTable from './Components/TimeTable/TimetablePage';
 import WelcomePage from './Components/WelcomePage/WelcomePage';
 import Book from './Components/Books/Books'
+import UpdatePassword from './Components/Actions/UpdatePassword';
+import DeleteAccount from './Components/Actions/DeleteAccount';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/questions" component={Questions} />
         <Route path="/pastpapers" component={PastPapers} />
         <Route path="/books" component={Book} />
+        <Route path="/changePassword" component={UpdatePassword} />
+        <Route path="/deleteUser" component={DeleteAccount} />
         <ContextWrapper>
           <Route path="/timetable" component={TimeTable} />
         </ContextWrapper>
