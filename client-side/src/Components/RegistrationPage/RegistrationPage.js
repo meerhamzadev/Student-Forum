@@ -1,37 +1,43 @@
-import {Button} from '@material-ui/core';
-import {AccountCircle} from '@material-ui/icons';
+import { Button } from '@material-ui/core';
+import { AccountCircle } from '@material-ui/icons';
 import axios from 'axios';
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function RegistrationPage() {
     const goBack = () => {
         window.history.back();
     }
-    
+
     const registerUser = async (e) => {
         e.preventDefault();
-        
-        let { user_name, email, user_password } = e.target;
-        
+
+        let { user_name, email, user_password, confirm_password } = e.target;
+
         let user = {
             name: user_name.value,
             email: email.value,
-            user_password: user_password.value
+            user_password: user_password.value,
+            confirm_password: confirm_password.value
         }
-        
+
         try {
             const response = await axios.post('http://localhost:5000/register', user)
-            
+
             if (response.status === 200) {
                 window.alert('User added Successfully');
                 document.querySelector('.reg__page__form__loginNavigator').click();
             }
         }
         catch (err) {
-            if (err.message.indexOf('422') !== -1) {
-                window.alert('Invalid Input')
+            if (err.message.indexOf('403') !== -1) {
+                window.alert('Passwords does not match to each other')
             }
+            else if (err.message.indexOf('422') !== -1) {
+                window.alert('Error Invalid Inputs')
+            }
+            else
+                window.alert('Error 500: Internal Server Error')
         }
 
     }
