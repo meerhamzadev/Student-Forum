@@ -6,6 +6,7 @@ import timetable from './routes/timetable.js'
 import pastPaper from './routes/pastPapers.js';
 import books from './routes/books.js';
 import updatePassword from './routes/updatePassword.js';
+import deletePassword from './routes/deleteAccount.js';
 
 // to resolve cors issue
 server.use((req, res, next) => {
@@ -24,6 +25,7 @@ server.use(timetable);
 server.use(pastPaper);
 server.use(books);
 server.use(updatePassword);
+server.use(deletePassword);
 
 server.listen(5000, () => {
     console.log("server started successfully");
