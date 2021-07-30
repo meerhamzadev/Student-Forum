@@ -31,6 +31,9 @@ function LoginPage() {
                   if (err.message.indexOf('404') !== -1) {
                         window.alert('Error 404: User not exist\nRegister first to Login')
                   }
+                  else if (err.message.indexOf('422') !== -1) {
+                        window.alert('Invalid Input')
+                  }
                   else {
                         window.alert('Error 500: Server error')
                   }
