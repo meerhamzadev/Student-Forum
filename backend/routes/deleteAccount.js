@@ -4,9 +4,9 @@ import bcrypt from 'bcrypt';
 const deleteAccount = Router();
 
 deleteAccount.post('/deleteUser', async (req, res) => {
-    let { email, password } = req.body;
+    let { email } = req.body;
 
-    db.query('delete from USERS as first_table and USERS as second_table where email = ?', email, (err) => {
+    db.query('delete from USERS where email = ?', email, (err) => {
         if (err) {
             return res.status(500).send("Error")
         }
