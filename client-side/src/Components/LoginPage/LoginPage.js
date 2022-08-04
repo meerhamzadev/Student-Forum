@@ -20,7 +20,7 @@ function LoginPage() {
             }
 
             try {
-                  const response = await axios.post('http://localhost:5000/login', Data);
+                  const response = await axios.post('https://student--forum.herokuapp.com/login', Data);
 
                   if (response.status === 200) {
                         const switchLink = document.querySelector('.login__page__homePageLink');

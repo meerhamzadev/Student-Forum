@@ -46,7 +46,7 @@ export default function SimpleSelect() {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/pastpapers', Data);
+      const response = await axios.post('https://student--forum.herokuapp.com/pastpapers', Data);
 
       if (response.status === 200 && response.data.pastPaperData.length !== 0) {
         setPastPaper(response.data.pastPaperData)

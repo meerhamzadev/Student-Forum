@@ -53,7 +53,7 @@ export default function SimpleSelect() {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/timetable', Data);
+      const response = await axios.post('https://student--forum.herokuapp.com/timetable', Data);
 
       if (response.status === 200 && response.data.data.length !== 0) {
         setTimeTableData(response.data.data)

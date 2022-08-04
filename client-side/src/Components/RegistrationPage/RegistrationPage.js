@@ -22,7 +22,7 @@ function RegistrationPage() {
         }
 
         try {
-            const response = await axios.post('http://localhost:5000/register', user)
+            const response = await axios.post('https://student--forum.herokuapp.com/register', user)
 
             if (response.status === 200) {
                 window.alert('User added Successfully');

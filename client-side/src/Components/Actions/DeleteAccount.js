@@ -20,7 +20,7 @@ function DeleteUser() {
         }
 
         try {
-            const response = await axios.post('http://localhost:5000/deleteUser', Data);
+            const response = await axios.post('https://student--forum.herokuapp.com/deleteUser', Data);
             console.log(response);
             if (response.status === 200) {
                 document.querySelector('.login__page__homePageLink').click();

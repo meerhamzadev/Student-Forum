@@ -21,7 +21,7 @@ function UpdatePassword() {
         }
 
         try {
-            const response = await axios.post('http://localhost:5000/changePassword', Data);
+            const response = await axios.post('https://student--forum.herokuapp.com/changePassword', Data);
 
             if (response.status === 200) {
                 document.querySelector('.login__page__homePageLink').click();
