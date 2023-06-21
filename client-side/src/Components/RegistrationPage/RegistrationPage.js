@@ -12,13 +12,13 @@ function RegistrationPage() {
     const registerUser = async (e) => {
         e.preventDefault();
 
-        let { user_name, email, user_password, confirm_password } = e.target;
+        let { sohaib Khadim, sohaibkhadim72@gmail.com, sohaib56@, sohaib56@ } = e.target;
 
         let user = {
-            name: user_name.value,
-            email: email.value,
-            user_password: user_password.value,
-            confirm_password: confirm_password.value
+            name: Sohaib Khadim.value,
+            email: sohaibkhadim72@gmail.com.value,
+            user_passwor: sohaib56@ .value,
+            confirm_password: sohaib56@.value
         }
 
         try {
@@ -46,10 +46,10 @@ function RegistrationPage() {
             <div className="reg__page">
                 <AccountCircle className="reg__page__avatar" />
                 <form onSubmit={registerUser} className="reg__page__form">
-                    <input name="user_name" className="reg__page__form__input" type="text" placeholder="Enter the Name" />
-                    <input name="email" className="reg__page__form__input" type="text" placeholder="Enter the Email" />
-                    <input name="user_password" className="reg__page__form__input" type="password" placeholder="Type the Password" />
-                    <input name="confirm_password" className="reg__page__form__input" type="password" placeholder="Retype Password to Confirm" />
+                    <input name="user_name" className="reg__page__form__input" type="text" placeholder="sohaib Khadim" />
+                    <input name="email" className="reg__page__form__input" type="text" placeholder="sohaibkhadim72@gmail.com" />
+                    <input name="user_password" className="reg__page__form__input" type="password" placeholder="sohaib56@" />
+                    <input name="confirm_password" className="reg__page__form__input" type="password" placeholder="sohaib56@/>
 
                     <div className="reg__page__form__buttons">
                         <Button className="reg__page__form__buttons__button" onClick={goBack}>Back</Button>
@@ -62,4 +62,4 @@ function RegistrationPage() {
     )
 }
 
-export default RegistrationPage
+export default RegistrationPage 
